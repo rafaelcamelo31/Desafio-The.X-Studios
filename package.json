@@ -1,0 +1,30 @@
+{
+  "name": "Desafio-The.X-Studios",
+  "version": "1.0.0",
+  "description": "# Desafio A idéia é construir um serviço WEB que receba um modelo em HTML do certificado e os dados do aluno e gerar um arquivo PDF desse certificado.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelcamelo31/Desafio-The.X-Studios.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaelcamelo31/Desafio-The.X-Studios/issues"
+  },
+  "homepage": "https://github.com/rafaelcamelo31/Desafio-The.X-Studios#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "express": "^4.17.1",
+    "handlebars": "^4.7.6",
+    "puppeteer": "^5.4.1"
+  }
+}
