@@ -19,7 +19,7 @@ app.post('/certificado', async (req, res) => {
     const { name, course, date } = req.body;
 
     try {
-        const browser = await puppeteer.launch();
+        const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
         const page = await browser.newPage();
 
         const content = await axios.get(fireBaseStorage)
