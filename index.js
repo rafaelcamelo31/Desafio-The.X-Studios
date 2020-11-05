@@ -1,4 +1,6 @@
 const express = require('express');
+const homeDir = require('os').homedir()
+const desktopDir = `${homeDir}/Desktop`
 const app = express();
 const puppeteer = require('puppeteer');
 const hbs = require('handlebars');
