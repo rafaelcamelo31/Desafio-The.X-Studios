@@ -36,7 +36,7 @@ app.post('/certificado', async (req, res) => {
         await page.setContent(content);
         await page.emulateMediaType('screen');
         await page.pdf({
-            path: 'mypdf.pdf',
+            path: `certificado.pdf`,
             format: 'A4',
             printBackground: true,
             landscape: true
