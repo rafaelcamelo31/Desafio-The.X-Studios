@@ -1,4 +1,6 @@
 const express = require('express');
+const homeDir = require('os').homedir()
+const desktopDir = `${homeDir}/Desktop`
 const app = express();
 const puppeteer = require('puppeteer');
 const hbs = require('handlebars');
@@ -36,7 +38,7 @@ app.post('/certificado', async (req, res) => {
         await page.setContent(content);
         await page.emulateMediaType('screen');
         await page.pdf({
-            path: 'mypdf.pdf',
+            path: `${desktopDir}/certificado.pdf`,
             format: 'A4',
             printBackground: true,
             landscape: true
