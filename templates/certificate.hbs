@@ -15,18 +15,18 @@
 
         <p>Certificamos que <strong>{{name}}</strong>, concluiu o curso <strong>{{course}}.</strong></p>
 
-        <p>Data: <span id="datetime"></span></p>
+        <p>Data de emissão: <span id="datetime">{{date}}</span></p>
     </div>
 
 
 </body>
-<script>
+{{!-- <script>
     const date = new Date();
     const day = date.getDate();
     const month = date.getMonth();
     const year = date.getFullYear();
     const dateFormat = day + '/' + (month + 1) + '/' + year;
     document.getElementById("datetime").innerHTML = dateFormat;
-</script>
+</script> --}}
 
 </html>
